@@ -34,7 +34,10 @@ class CatalogPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-
+                  _buildCategoryChip('Popular'),
+                  _buildCategoryChip('Comic'),
+                  _buildCategoryChip('Art'),
+                  _buildCategoryChip('Technology'),
                 ],
               ),
             ),
@@ -94,7 +97,7 @@ class CatalogPage extends StatelessWidget {
               ],
             ),
           ),
-          Icon(Icons.chevron_right) ,
+          Icon(Icons.chevron_right),
         ],
       ),
     );
